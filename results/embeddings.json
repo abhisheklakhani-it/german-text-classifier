@@ -1,0 +1,11 @@
+{
+  "model": "intfloat/multilingual-e5-small",
+  "device": "mps",
+  "dimensions": 384,
+  "seconds": {
+    "train": 105.4,
+    "validation": 12.0,
+    "test": 13.6
+  },
+  "test_articles_over_512_tokens": 0.48443579766536965
+}
