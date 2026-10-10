@@ -1,0 +1,79 @@
+{
+  "label_names": [
+    "Web",
+    "Panorama",
+    "International",
+    "Wirtschaft",
+    "Sport",
+    "Inland",
+    "Etat",
+    "Wissenschaft",
+    "Kultur"
+  ],
+  "splits": {
+    "train": {
+      "articles": 8320,
+      "per_class": {
+        "Web": 1358,
+        "Panorama": 1359,
+        "International": 1224,
+        "Wirtschaft": 1143,
+        "Sport": 973,
+        "Inland": 822,
+        "Etat": 541,
+        "Wissenschaft": 464,
+        "Kultur": 436
+      },
+      "words": {
+        "median": 297.0,
+        "mean": 364.1,
+        "p95": 822,
+        "max": 2832,
+        "min": 3
+      }
+    },
+    "validation": {
+      "articles": 925,
+      "per_class": {
+        "Web": 151,
+        "Panorama": 151,
+        "International": 136,
+        "Wirtschaft": 127,
+        "Sport": 108,
+        "Inland": 91,
+        "Etat": 60,
+        "Wissenschaft": 52,
+        "Kultur": 49
+      },
+      "words": {
+        "median": 307,
+        "mean": 355.0,
+        "p95": 772,
+        "max": 3063,
+        "min": 4
+      }
+    },
+    "test": {
+      "articles": 1028,
+      "per_class": {
+        "Web": 168,
+        "Panorama": 168,
+        "International": 151,
+        "Wirtschaft": 141,
+        "Sport": 120,
+        "Inland": 102,
+        "Etat": 67,
+        "Wissenschaft": 57,
+        "Kultur": 54
+      },
+      "words": {
+        "median": 297.5,
+        "mean": 368.3,
+        "p95": 828,
+        "max": 4800,
+        "min": 7
+      }
+    }
+  },
+  "share_over_365_words": 0.392
+}
