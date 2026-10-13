@@ -87,6 +87,8 @@ def main() -> None:
     trainer.train()
     train_minutes = (time.perf_counter() - start) / 60
 
+    # group_by_length also reorders eval/predict batches; predict in dataset order so preds line up with test["label"]
+    trainer.args.train_sampling_strategy = "sequential"
     start = time.perf_counter()
     predictions = trainer.predict(test)
     test_seconds = time.perf_counter() - start

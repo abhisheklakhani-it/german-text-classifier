@@ -14,3 +14,6 @@ checkpoints/
 
 # Private session notes (never uploaded)
 SESSION_NOTES*.txt
+
+# Colab download (holds the model weights, kept out of git like models/)
+distilbert_results*.zip
