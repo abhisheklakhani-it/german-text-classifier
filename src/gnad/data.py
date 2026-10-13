@@ -1,7 +1,7 @@
 """Load 10kGNAD and split it into train / validation / test.
 
 The test split is the official one (1,028 articles) and is only used for the final
-comparison. Model choices (grid search, epochs) use a stratified 10% validation split
+comparison. Model choices (k for kNN, best epoch) use a stratified 10% validation split
 carved out of the official training data.
 """
 

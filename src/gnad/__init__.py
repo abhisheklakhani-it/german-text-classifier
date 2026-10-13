@@ -1,1 +1,1 @@
-"""German news topic classification: TF-IDF baseline vs fine-tuned DistilBERT."""
+"""German news topic classification: embeddings + Qdrant kNN vs fine-tuned DistilBERT."""
