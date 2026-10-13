@@ -1,0 +1,206 @@
+{
+  "accuracy": 0.8978599221789884,
+  "macro_f1": 0.8973876005180146,
+  "per_class": {
+    "Web": {
+      "precision": 0.9580838323353293,
+      "recall": 0.9523809523809523,
+      "f1": 0.9552238805970149,
+      "support": 168
+    },
+    "Panorama": {
+      "precision": 0.8212290502793296,
+      "recall": 0.875,
+      "f1": 0.8472622478386167,
+      "support": 168
+    },
+    "International": {
+      "precision": 0.8943661971830986,
+      "recall": 0.8410596026490066,
+      "f1": 0.8668941979522184,
+      "support": 151
+    },
+    "Wirtschaft": {
+      "precision": 0.9037037037037037,
+      "recall": 0.8652482269503546,
+      "f1": 0.8840579710144928,
+      "support": 141
+    },
+    "Sport": {
+      "precision": 0.9834710743801653,
+      "recall": 0.9916666666666667,
+      "f1": 0.9875518672199171,
+      "support": 120
+    },
+    "Inland": {
+      "precision": 0.8446601941747572,
+      "recall": 0.8529411764705882,
+      "f1": 0.848780487804878,
+      "support": 102
+    },
+    "Etat": {
+      "precision": 0.9117647058823529,
+      "recall": 0.9253731343283582,
+      "f1": 0.9185185185185185,
+      "support": 67
+    },
+    "Wissenschaft": {
+      "precision": 0.864406779661017,
+      "recall": 0.8947368421052632,
+      "f1": 0.8793103448275862,
+      "support": 57
+    },
+    "Kultur": {
+      "precision": 0.8888888888888888,
+      "recall": 0.8888888888888888,
+      "f1": 0.8888888888888888,
+      "support": 54
+    }
+  },
+  "confusion_matrix": [
+    [
+      160,
+      1,
+      1,
+      2,
+      0,
+      2,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      147,
+      5,
+      3,
+      0,
+      5,
+      1,
+      3,
+      3
+    ],
+    [
+      2,
+      14,
+      127,
+      5,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      6,
+      3,
+      122,
+      0,
+      7,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      119,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      3,
+      2,
+      0,
+      87,
+      0,
+      2,
+      2
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      62,
+      0,
+      0
+    ],
+    [
+      1,
+      2,
+      1,
+      0,
+      1,
+      1,
+      0,
+      51,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      2,
+      1,
+      48
+    ]
+  ],
+  "model": "distilbert-base-german-cased",
+  "device": "cuda:0",
+  "max_length": 512,
+  "epochs": 3,
+  "learning_rate": 5e-05,
+  "train_minutes": 4.9,
+  "test_seconds": 3.2,
+  "truncated_test_articles": 430,
+  "validation_history": [
+    {
+      "eval_loss": 0.36032411456108093,
+      "eval_accuracy": 0.8854054054054054,
+      "eval_macro_f1": 0.8728575009261559,
+      "eval_runtime": 2.7259,
+      "eval_samples_per_second": 339.332,
+      "eval_steps_per_second": 21.277,
+      "epoch": 1.0,
+      "step": 520
+    },
+    {
+      "eval_loss": 0.2835204005241394,
+      "eval_accuracy": 0.8994594594594595,
+      "eval_macro_f1": 0.8904985453461364,
+      "eval_runtime": 2.7869,
+      "eval_samples_per_second": 331.907,
+      "eval_steps_per_second": 20.811,
+      "epoch": 2.0,
+      "step": 1040
+    },
+    {
+      "eval_loss": 0.31686535477638245,
+      "eval_accuracy": 0.9016216216216216,
+      "eval_macro_f1": 0.8970125142019744,
+      "eval_runtime": 2.7879,
+      "eval_samples_per_second": 331.786,
+      "eval_steps_per_second": 20.804,
+      "epoch": 3.0,
+      "step": 1560
+    }
+  ],
+  "best_checkpoint": "/content/checkpoints/distilbert/checkpoint-1560",
+  "test_rescored_locally": {
+    "reason": "Colab predictions were length-grouped, not in test order",
+    "seconds": 79.6
+  }
+}

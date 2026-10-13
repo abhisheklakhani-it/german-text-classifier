@@ -1,0 +1,78 @@
+{
+  "test_articles": 1028,
+  "models": {
+    "knn": {
+      "model": "e5 + Qdrant kNN",
+      "accuracy": 0.8473,
+      "macro_f1": 0.8448,
+      "top_confusions": [
+        [
+          "Panorama",
+          "International",
+          16
+        ],
+        [
+          "International",
+          "Panorama",
+          14
+        ],
+        [
+          "Panorama",
+          "Wirtschaft",
+          10
+        ]
+      ]
+    },
+    "linear_probe": {
+      "model": "e5 + logistic regression",
+      "accuracy": 0.856,
+      "macro_f1": 0.8569,
+      "top_confusions": [
+        [
+          "International",
+          "Panorama",
+          17
+        ],
+        [
+          "Panorama",
+          "International",
+          11
+        ],
+        [
+          "Wirtschaft",
+          "Inland",
+          11
+        ]
+      ]
+    },
+    "transformer": {
+      "model": "Fine-tuned DistilBERT",
+      "accuracy": 0.8979,
+      "macro_f1": 0.8974,
+      "top_confusions": [
+        [
+          "International",
+          "Panorama",
+          14
+        ],
+        [
+          "Wirtschaft",
+          "Inland",
+          7
+        ],
+        [
+          "Wirtschaft",
+          "Panorama",
+          6
+        ]
+      ]
+    }
+  },
+  "best": "transformer",
+  "agreement_knn_vs_transformer": {
+    "both_right": 830,
+    "only_first_right": 41,
+    "only_second_right": 93,
+    "both_wrong": 64
+  }
+}
