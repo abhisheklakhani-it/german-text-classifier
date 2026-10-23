@@ -2,6 +2,7 @@
 
 Topic classification of German news articles (10kGNAD, 9 topics, 1,028 test articles), comparing a **vector-database baseline that needs no training** against a **fine-tuned German DistilBERT**. The baseline embeds every article with `multilingual-e5-small`, stores the training articles in **Qdrant**, and labels a new article by a vote among its nearest neighbours. Both models are chosen on a validation split, scored once on the official test split, and served through the same `predict.py`.
 
+[![CI](https://github.com/abhisheklakhani-it/german-text-classifier/actions/workflows/ci.yml/badge.svg)](https://github.com/abhisheklakhani-it/german-text-classifier/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Transformers-5.x-FFD21E?logo=huggingface&logoColor=black)
 ![Qdrant](https://img.shields.io/badge/Qdrant-local%20mode-DC244C)
